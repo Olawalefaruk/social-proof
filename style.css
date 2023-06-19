@@ -36,10 +36,6 @@ body {
   justify-content: center;
 }
 
-.combine {
-   
-  
-}
 
 .top-div {
   position: relative;
@@ -165,20 +161,11 @@ span {
 @media (orientation: portrait) {
   body {
     background: url(./bg-pattern-top-mobile.svg), url(./bg-pattern-bottom-mobile.svg);
-    background-position: right 45vw bottom 60vh, left 15vw top 22vh;
+    background-position: right 20vw bottom 60vh, left 15vw top 22vh;
     background-repeat: no-repeat, no-repeat;
     background-color: white;
   }
   
-  .background {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   h1 {
     font-size: 10px;
     width: 95px;
@@ -256,7 +243,9 @@ span {
   }
 
   .combine {
-   width: 100%;
+   width: 70%;
+   justify-content: center;
+   align-items: center;
   }
 
   .reviews-1 {
