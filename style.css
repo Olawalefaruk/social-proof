@@ -158,12 +158,21 @@ span {
   color: rgb(172, 9, 172);
 }
 
-@media (orientation: portrait) {
+@media (max-width: 481px) {
   body {
     background: url(./bg-pattern-top-mobile.svg), url(./bg-pattern-bottom-mobile.svg);
-    background-position: right 20vw bottom 60vh, left 15vw top 22vh;
+    background-position: right 20vw bottom 60vh, left 15vw top 32vh;
     background-repeat: no-repeat, no-repeat;
     background-color: white;
+    
+  }
+  
+  .background {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   h1 {
@@ -187,6 +196,9 @@ span {
   .top-div {
     position: static;
     margin-bottom: 10px;
+    display: block;
+    max-width: 130px;
+    margin-right: 0;
   }
   h2 {
     font-size: 5px;
@@ -243,9 +255,10 @@ span {
   }
 
   .combine {
-   width: 70%;
+    max-width: 130px;
    justify-content: center;
    align-items: center;
+   display: block;
   }
 
   .reviews-1 {
